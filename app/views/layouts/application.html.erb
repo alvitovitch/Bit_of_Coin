@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bit of Coin</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <script type="text/javascript">
+      window.spinner = "<%= image_url('spinner.gif') %>";
+      window.coin = "<%= image_url('coin.gif') %>";
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="<%= image_url('favicon.ico') %>">
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

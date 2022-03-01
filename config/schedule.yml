@@ -1,0 +1,4 @@
+fetch_all_coins:
+  cron: "* * * * *"
+  class: "HardJob"
+  queue: default
