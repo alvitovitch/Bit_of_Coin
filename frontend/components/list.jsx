@@ -6,13 +6,13 @@ export default function List(props) {
     const coins = Object.values(props.coins)
     if (coins.length > 0) {
         return (
-                            <table className="w-1/2 divide-y divide-gray-200 overflow-y-scroll border-solid border 2 border-grey-500">
+                            <table className="w-1/3 divide-y divide-gray-200 overflow-y-scroll border-solid border 2 border-grey-500">
                                 <thead className="bg-gray-50">
                                     <tr>
-                                        <th scope="col" className="px-6 py-3 text-center text-lg font-medium text-gray-500 uppercase ">Id</th>
-                                        <th scope="col" className="px-6 py-3 text-center text-lg font-medium text-gray-500 uppercase ">Symbol</th>
-                                        <th scope="col" className="px-6 py-3 text-center text-lg font-medium text-gray-500 uppercase ">Image</th>
-                                        <th scope="col" className="px-6 py-3 text-center text-lg font-medium text-gray-500 uppercase ">Name</th>
+                                        <th scope="col" className="px-6 py-3 text-center text-sm text-gray-500 uppercase ">Id</th>
+                                        <th scope="col" className="px-6 py-3 text-center text-sm text-gray-500 uppercase ">Symbol</th>
+                                        <th scope="col" className="px-6 py-3 text-center text-sm text-gray-500 uppercase ">Image</th>
+                                        <th scope="col" className="px-6 py-3 text-center text-sm text-gray-500 uppercase ">Name</th>
                                     </tr>
                                 </thead>
                                     <tbody className="bg-white divide-y divide-gray-200 overflow-y-scroll divide-gray-200 ">
@@ -21,12 +21,12 @@ export default function List(props) {
                                         <tr key={coin.id}>
                                             <td className="px-6 py-4 whitespace-nowrap">
                                                 <div className="flex h-inherit justify-center align-center">
-                                                    <div className="text-base font-medium text-gray-900">{coin.id}</div>
+                                                    <div className="text-xs font-medium text-gray-900">{coin.id}</div>
                                                     </div>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
                                                 <div className="flex h-inherit justify-center align-center">
-                                                    <div className="flex text-base justify-self-center font-medium text-gray-900">{coin.symbol}</div>
+                                                    <div className="flex text-xs font-medium justify-self-center text-gray-900">{coin.symbol}</div>
                                                 </div>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
@@ -36,7 +36,7 @@ export default function List(props) {
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
                                                 <div className="flex h-inherit justify-center align-center">
-                                                    <div className="text-base font-medium text-gray-900">{coin.name}</div>
+                                                    <div className="text-xs font-medium text-gray-900">{coin.name}</div>
                                                     </div>
                                             </td>
                                             
